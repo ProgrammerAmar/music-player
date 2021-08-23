@@ -18,7 +18,7 @@
             <div class="volume">
                     <p id="volume_show">90</p>
                     <i class="fa fa-volume-up" aria-hidden="true" id="volume_icon"></i>
-                    <input type="range" min="0" max="100" value="90">
+                    <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">
             </div>
         </div>
 
@@ -36,8 +36,8 @@
 
             <!-- Middle part -->
             <div class="middle">
-                <button onclick="previous_song()" id="pre"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
-                <button id="play" onclick="just_play()"><i class="fa fa-play" aria-hidden="true"></i></button>
+                <button id="pre" onclick="previous_song()"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+                <button id="play" onclick="justplay()"><i class="fa fa-play" aria-hidden="true"></i></button>
                 <button id="next" onclick="next_song()"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
             </div>
 
@@ -49,5 +49,6 @@
         </div>
     </div>
     
+    <script src="script.js"></script>
 </body>
 </html>
